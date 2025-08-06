@@ -5,7 +5,7 @@
   show heading: it => std.html.elem("h" + str(it.level), it.body)
   show underline: html.span.with(class: "link")
   
-  show: html.html
+  show: html.html.with(lang: "en")
 
   html.head({
     html.meta(charset: "utf-8", none)
@@ -17,6 +17,12 @@
     html.link(rel: "icon", type: "image/svg+xml", href: "/assets/icons/favicon.svg", none)
     html.link(rel: "shortcut icon", href: "/favicon.ico", none)
     html.link(rel: "apple-touch-icon", href: "/assets/icons/apple-touch-icon.png", sizes: "180x180", none)
+
+    context {
+      if document.description != none {
+        html.meta(name: "description", content: document.description.text, none)
+      }
+    }
     
     head
   })
