@@ -16,6 +16,7 @@
     html.link(rel: "icon", type: "image/png", href: "/assets/icons/favicon-96x96.png", sizes: "96x96", none)
     html.link(rel: "icon", type: "image/svg+xml", href: "/assets/icons/favicon.svg", none)
     html.link(rel: "shortcut icon", href: "/favicon.ico", none)
+    html.link(rel: "apple-touch-icon", href: "/assets/icons/apple-touch-icon.png", sizes: "180x180", none)
     
     head
   })
