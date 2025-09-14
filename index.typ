@@ -5,7 +5,9 @@
 
 #set document(title: "Louis Legrain", description: description)
 
-#show: template
+#show: template.with(
+  head: html.link(rel: "canonical", href: "https://louislegrain.online", none)
+)
 #include "components/header.typ"
 
 #html.main[
