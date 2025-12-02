@@ -1,4 +1,3 @@
-#import "@preview/typsite:0.1.0": html-bindings._h as html
 #import "lib/lib.typ": *
 
 #set document(

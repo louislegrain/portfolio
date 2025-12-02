@@ -1,4 +1,3 @@
-#import "@preview/typsite:0.1.0": html-bindings._h as html
 #import "lib/lib.typ": *
 
 #let description = "I am a French student with a deep passion for computer science and entrepreneurship. I love building things and learning new technologies along the way."
@@ -6,7 +5,7 @@
 #set document(title: "Louis Legrain", description: description)
 
 #show: template.with(
-  head: html.link(rel: "canonical", href: "https://louislegrain.online", none)
+  head: html.link(rel: "canonical", href: "https://louislegrain.online")
 )
 #include "components/header.typ"
 
